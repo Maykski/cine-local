@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+.conteudo {
+  font-family: "Bungee", sans-serif;
+  color: #F1F5F9;
+  font-size: 50px;
+  padding-top: 80px;
+  text-align: center;
+}
+
+.titulo-filmes {
+  width: 100%;
+  height: 700px; 
+  background-image: url('Imagens/FILMESEMCARTAZ.png');
+  background-size: cover;   
+  background-position: center; 
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  z-index: 1;
+}
+
+.titulo-filmes::before {
+  content: "";
+  position: absolute;
+  top: -15px;  
+  left: 0;
+  width: 100%;
+  height: 100px; 
+  background: linear-gradient(to top, transparent, #3f0606);
+}
+
+.titulo-filmes::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 100%;
+  height: 150px; 
+  background: linear-gradient(to bottom, transparent, #3f0606);
+  z-index: 2;
+}
+
+
+.hero {
+  position: relative;
+  height: 90vh;
+  background: url("Imagens/sala_cinema.jpg") center/cover no-repeat; 
+  filter: brightness(0.8) contrast(1.1) saturate(1.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 100%;
+  height: 150px; 
+  background: linear-gradient(to bottom, transparent, #3f0606);
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.hero .btn {
+  padding: 14px 28px;
+  background: #e50914;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+.hero .btn:hover {
+  background: #b00610;
+}
+.hero .btn-sec {
+  background: #243e85;
+}
+.hero .btn-sec:hover {
+  background: #1c326b;
+}
+
+.texto_Filmes_em_Cartaz {
+  color: #F1F5F9;
+  font-size: 90px;
+  text-align: center;
+}
+
+.grade-filmes {
+  display: grid;
+  background: url("Imagens/fundo2.jpg") center/cover no-repeat; 
+  filter: brightness(0.8) contrast(1.1) saturate(1.2);
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 30px;
+  padding: 40px;
+  justify-items: center;
+}
+
+.cartaz {
+  background-color: #490f0f;
+  color: #F1F5F9;
+  background: url("Imagens/Fundo.jpg") center/cover no-repeat; 
+  font-family:"Bungee", sans-serif;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  width: 220px;
+  min-height: 400px;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;   
+  box-shadow: 0 4px 8px rgba(0,0,0,0.36);
+}
+
+
+
+.cartaz img {
+  width: 100%;
+  height: 300px; 
+  border-radius: 8px;
+  object-fit: cover; 
+}
+
+.cartaz h3 {
+  margin: 10px 0 5px 0;
+  font-size: 18px;
+  font-weight: bold;
+  min-height: 40px; 
+}
+
+.cartaz p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.cartaz:hover {
+  transform: scale(1.05);
+}
+
+.poster {
+  border: 6px solid transparent;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.poster img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.programacao {
+  margin-top: 15px;
+  background: rgba(0, 0, 0, 0.8); 
+  border: 4px solid white;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.programacao p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.estreia-semana {
+  margin-top: 12px;
+  background: #e2001e;
+  color: #ffe600;
+  font-size: 12px;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+
+#carousel-lancamentos {
+  position: relative;
+  width: 80%;
+  max-width: 1100px;
+  margin: 40px auto;
+  border-radius: 16px;
+  box-shadow: 0 6px 30px rgba(0,0,0,0.6);
+  overflow: hidden;   
+}
+
+#carousel-lancamentos .slides {
+  display: flex;
+  transition: transform 0.6s ease;
+  will-change: transform;
+}
+
+
+#carousel-lancamentos .slide {
+  flex: 0 0 100%;   
+  box-sizing: border-box;
+}
+
+#carousel-lancamentos .slide img {
+  width: 100%;
+  height: 500px;       
+  object-fit: contain;  
+  background: #000;
+  display: block;
+  border-radius: 16px;
+}
+
+@media (max-width: 1200px) {
+  #carousel-lancamentos .slide img { height: 500px; }
+}
+@media (max-width: 480px) {
+  #carousel-lancamentos .slide img { height: 240px; }
+  #carousel-lancamentos .prev,
+  #carousel-lancamentos .next { font-size: 28px; width:44px; height:44px; left: -50px; right: -50px; }
+}

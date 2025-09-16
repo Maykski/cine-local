@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="PartHeader.css">
+    <link rel="stylesheet" href="PartMain.css">
+    <link rel="stylesheet" href="PartFooter.css">
+    <script src="script.js"></script>
+    <title>Cine Cisne</title>
+</head>
+
+<body>
+  <header class="cabecario">
+
+    <div class="logotipo_site">
+      <img src="Imagens/logocine.png" alt="Logotipo" class="logo">
+    </div>
+
+   
+    <div class="conteudo_links">
+      <nav>
+        <a href="#filmes_cartaz">Em cartaz</a>
+        <a href="#lancamentos_futuros">Programações Futuras</a>
+        <a href="#">Explore</a>
+        <a href="#">Problemas</a>
+        <a href="#rodape">Contato</a>
+      </nav>
+    </div>
+
+    <div class="login">
+      <button class="botao-login" onclick="location.href='#rodape'">Login</button>
+    </div>
+
+  </header>
+
+  <main class="conteudo"> 
+
+    <section class="hero">
+      <div class="hero-overlay">
+        <h1>🎬 Cine Cisne</h1>
+        <p>A magia do cinema na sua cidade</p>
+        <div class="hero-buttons">
+          <a href="#filmes_cartaz" class="btn">Ver Programação</a>
+          <a href="#lancamentos_futuros" class="btn btn-sec">Próximos Lançamentos</a>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin-bottom: 0px;" id="filmes_cartaz" class="titulo-filmes">
+    </section>
+
+
+
+      
+    <section class="grade-filmes">
+
+      <!-- Cartaz 1 -->
+      <div class="cartaz destaque">
+        <div class="poster">
+          <img src="Filmes/Poster_Invocação_do_Mal_4_Oúltimoritual.png" alt="Filme 1">
+        </div>
+        <div class="programacao">
+          <p>Quinta - 19/06 - 21:00h Dub 2D</p>
+        </div>
+        <div class="estreia-semana">
+          <span>Estreia da Semana</span>
+        </div>
+      </div>
+
+      <!-- Cartaz 2 -->
+      <div class="cartaz">
+        <div class="poster">
+          <img src="Filmes/Poster_O_Rei_da_Feira.png" alt="Filme 2">
+        </div>
+        <div class="programacao">
+          <p>Sexta - 05/09 - 20:00h Dub 2D</p>
+        </div>
+      </div>
+
+      <!-- Cartaz 3 -->
+      <div class="cartaz">
+        <div class="poster">
+          <img src="Filmes/Poster_O_Ultimo_Azul.png" alt="Filme 3">
+        </div>
+        <div class="programacao">
+          <p>Sábado - 06/09 - 18:00h Dub 2D</p>
+        </div>
+      </div>
+
+      <!-- Cartaz 4 -->
+      <div class="cartaz">
+        <div class="poster">
+          <img src="Filmes/Poster Cartaz Super Wings em Velocidade Máxima.png" alt="Filme 4">
+        </div>
+        <div class="programacao">
+          <p>Domingo - 07/09 - 19:00h Leg 2D</p>
+        </div>
+      </div>
+
+      <!-- Cartaz 5 -->
+      <div class="cartaz">
+        <div class="poster">
+          <img src="Filmes/Poster Os cara malvados 2.png" alt="Filme 5">
+        </div>
+        <div class="programacao">
+          <p>Segunda - 08/09 - 20:00h Dub 2D</p>
+        </div>
+      </div>
+
+      <!-- Cartaz 6 -->
+      <div class="cartaz">
+        <div class="poster">
+          <img src="Filmes/Poster_Rosario.png" alt="Filme 6">
+        </div>
+        <div class="programacao">
+          <p>Terça - 09/09 - 18:30h Dub 2D</p>
+        </div>
+      </div>
+
+      <!-- Cartaz 7 -->
+      <div class="cartaz">
+        <div class="poster">
+          <img src="Filmes/Poster_Anônimo_2.png" alt="Filme 7">
+        </div>
+        <div class="programacao">
+          <p>Terça - 09/09 - 21:00h Leg 2D</p>
+        </div>
+      </div>
+
+      <!-- Cartaz 8 -->
+      <div class="cartaz">
+        <div class="poster">
+          <img src="Filmes/Poster_Corra_Que_A_Policia_Vem_Aí.png" alt="Filme 8">
+        </div>
+        <div class="programacao">
+          <p>Quarta - 10/09 - 19:00h Dub 2D</p>
+        </div>
+      </div>
+
+    </section>
+    <section style="margin-top: 60px" id="lancamentos_futuros" >
+      <div class="lancamentos_futuros_texto">
+        <h1>Lançamentos Futuros</h1>
+      </div>
+
+      <div id="carousel-lancamentos" class="carousel">
+        <div class="slides">
+          <div class="slide"><img src="Lancamentos_Futuros/demon-slayer-kimetsu-no-yaiba-infinity-castle.jpg" alt="Filme 1"></div>
+          <div class="slide"><img src="Lancamentos_Futuros/reloading.png" alt="Filme 2"></div>
+          <div class="slide"><img src="Lancamentos_Futuros/Reloading.jpg" alt="Filme 3"></div>
+          <div class="slide"><img src="Lancamentos_Futuros/reloading.png" alt="Filme 4"></div>
+        </div>
+      </div>
+    </section>  
+  </main>
+
+  <footer id="rodape" class="rodape">
+  <div class="rodape-esquerda">
+    <div class="endereco">
+      <a href="https://www.google.com/maps/place/Cine+Cisne/@-28.3005237,-54.2613834,3a,75y,251.29h,90t/data=!3m7!1e1!3m5!1sPlDCsHYru0TboQkdlu3XQQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DPlDCsHYru0TboQkdlu3XQQ%26yaw%3D251.29367!7i16384!8i8192!4m6!3m5!1s0x94fe9082f10dcc69:0xb3e59fa39364376f!8m2!3d-28.3005576!4d-54.2615269!16s%2Fg%2F1ym82mvmq?entry=ttu" target="_blank">
+        <img src="Imagens/location.png" alt="localizacao" class="localizacao">
+        <span>R. Marquês do Herval, 1604 - Sossego, Santo Ângelo - RS, 98801-640</span>
+      </a>
+    </div>
+
+    <div class="logo-rodape">
+      <img src="Imagens/logocine.png" alt="Logo Cine Cisne" class="logo-footer">
+    </div>
+  </div>
+
+  <div class="rodape-centro">
+    <span>SIGA</span>
+    <div class="redes-sociais">
+      <a href="https://www.instagram.com/cinecisne" target="_blank"><img src="Imagens/instagram.png" alt="Instagram"></a>
+      <a href="https://www.facebook.com/CineCisne/?locale=pt_BR" target="_blank"><img src="Imagens/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="Imagens/whatsapp.png" alt="Whatsapp"></a>
+    </div>
+  </div>
+
+  <section class="rodape-direita">
+    <form>
+      <label for="email">Cadastre-se e receba novidades*</label>
+      <input type="email" id="email" placeholder="Digite seu e-mail" required>
+      <input type="text" placeholder="Seu nome" required>
+      <button type="submit">Enviar minha solicitação agora</button>
+    </form>
+  </section>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

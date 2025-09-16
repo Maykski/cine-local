@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+.rodape {
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 60px;
+    flex-wrap: wrap;
+}
+
+.rodape h3 {
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.rodape a {
+    color: #d50000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.endereco a {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.endereco a:hover {
+    text-decoration: underline;
+}
+
+.localizacao {
+    width: 34px;
+    height: 34px;
+    filter: invert(100%);
+}
+
+.logo-rodape {
+    margin-top: 20px;
+}
+
+.logo-footer {
+    height: 120px;
+}
+
+.rodape-centro {
+    text-align: center;
+}
+
+.redes-sociais img {
+    width: 70px;
+    margin: 0 8px;
+    filter: invert(100%); 
+    cursor: pointer;
+
+}
+
+.redes-sociais img:hover {
+    transform: scale(1.2);
+}
+
+.rodape-direita form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rodape-direita input {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+}
+
+.rodape-direita button {
+    background-color: #d50000;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
